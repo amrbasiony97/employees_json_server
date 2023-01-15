@@ -1,0 +1,14 @@
+{
+  "name": "employees_fake_server",
+  "version": "1.0.0",
+  "description": "Employee fake server",
+  "main": "js/main.js",
+  "scripts": {
+    "JsonServer": "json-server --watch db.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

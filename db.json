@@ -1,0 +1,126 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Nadia",
+      "age": "25",
+      "salary": "10000",
+      "departmentId": "1"
+    },
+    {
+      "id": "2",
+      "name": "Ayman",
+      "age": "30",
+      "salary": "9000",
+      "departmentId": "2"
+    },
+    {
+      "id": "3",
+      "name": "Eman",
+      "age": "24",
+      "salary": "8000",
+      "departmentId": "3"
+    },
+    {
+      "id": "4",
+      "name": "Sara",
+      "age": "28",
+      "salary": "7000",
+      "departmentId": "1"
+    },
+    {
+      "id": "15",
+      "name": "Nada",
+      "age": "32",
+      "salary": "6500",
+      "departmentId": "2"
+    },
+    {
+      "id": "120",
+      "name": "Mostafa",
+      "age": "40",
+      "salary": "5000",
+      "departmentId": "3"
+    },
+    {
+      "id": "206",
+      "name": "Amany",
+      "age": "26",
+      "salary": "5500",
+      "departmentId": "1"
+    },
+    {
+      "id": "1000",
+      "name": "Mona",
+      "age": "33",
+      "salary": "5000",
+      "departmentId": "2"
+    },
+    {
+      "id": "1500",
+      "name": "Hassan",
+      "age": "40",
+      "salary": "4500",
+      "departmentId": "3"
+    }
+  ],
+  "departments": [
+    {
+      "id": 1,
+      "name": "AI",
+      "description": "Artificial Intelligence and Machine Learning",
+      "technologies": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning",
+        "Natural Language Processing",
+        "Computer Vision"
+      ],
+      "jobProfiles": [
+        "Machine Learning Engineer",
+        "Artificial Intelligence Engineer",
+        "Software Engineer - Machine Learning"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "OS",
+      "description": "Open Source Applications Development",
+      "technologies": [
+        "Node JS",
+        "Spring",
+        "Laravel",
+        "Django",
+        "Ruby on Rails"
+      ],
+      "jobProfiles": [
+        "Back-end Developer",
+        "Front-end Developer",
+        "Full Stack Developer",
+        "Mean Stack Developer",
+        "Odoo Developer"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "PD",
+      "description": "Professional Web Development and BI",
+      "technologies": [
+        "Asp.Net Core MVC",
+        "Asp.Net SignalR",
+        "Node JS",
+        "Entity Framework 6",
+        "LINQ"
+      ],
+      "jobProfiles": [
+        "Business Intelligence & Big Data Specialist",
+        "Database Developer",
+        "Full Stack Developer",
+        "Javascript Developer",
+        "Microsoft Desktop Solution Developer",
+        "Microsoft Solution Developer",
+        "Microsoft Web Solution Developer"
+      ]
+    }
+  ]
+}

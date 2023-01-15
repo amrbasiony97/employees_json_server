@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 40px auto 30px;
+  text-align: center;
+  color: #007fff;
+}
+
+.db-table {
+  width: 600px;
+  border-collapse: collapse;
+  margin: 20px auto 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.db-table th, .db-table td {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.db-table th:first-of-type {
+  border-top-left-radius: 10px;
+}
+
+.db-table th:last-of-type {
+  border-top-right-radius: 10px;
+}
+
+.db-table th {
+  background-color: #007fff;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.db-table tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.db-table tr:nth-of-type(odd) {
+  background-color: #f0f0f0;
+}
+
+.db-table tr:last-of-type {
+  border-bottom: 3px solid #007fff;
+}
+
+section {
+  display: none;
+}
+
+#list-content {
+  width: 350px;
+  margin: auto;
+}
+
+fieldset {
+  border: 0;
+}
+
+fieldset label {
+  display: inline-block;
+  margin: 12px 0 5px 0;
+}
+
+fieldset > span,
+fieldset > div > span {
+  color: red;
+  float: right;
+  position: relative;
+  top: 12px;
+}
+
+fieldset > input[type='text'] ,
+fieldset > div > input[type='text'] {
+  padding: 5px;
+  font-size: 1em;
+  width: 100%;
+  color: #444;
+  border: 1px solid #c5c5c5;
+  border-radius: 3px;
+}
+
+fieldset > input[type='text']:focus,
+fieldset > div > input[type='text']:focus,
+#add-dept-button:focus,
+fieldset button:focus
+{
+  outline: 2px solid #007fff;
+}
+
+fieldset .error {
+  outline: 2px solid red !important;
+}
+
+#search-input {
+  margin-bottom: 20px;
+}
+
+.ui-selectmenu-button.ui-button {
+  width: 100%;
+  margin-bottom: 0;
+  top: 0;
+}
+
+.ui-checkboxradio-label {
+  width: 23.7%;
+}
+
+.menu {
+  width: 500px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  font-size: 20px;
+}
+
+.menu > li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.active {
+  color: #007fff;
+  border-bottom: 4px solid #007fff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 40px auto;
+  cursor: pointer;
+}
+
+.ui-dialog-buttonpane button {
+  width: fit-content;
+  margin-bottom: unset;
+  top: unset;
+}
+
+.delete {
+  color: #fff;
+  background-color: red !important;
+}
+
+.delete-hover:hover {
+  cursor: pointer;
+}

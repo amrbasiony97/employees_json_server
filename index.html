@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script type="module" src="js/events.js"></script>
+    <script type="module" src="js/main.js" defer></script>
+    <title>Employees JSON Server</title>
+  </head>
+  <body>
+    <main>
+      <h1>Employees JSON Server</h1>
+      <ul class="menu">
+        <li>Add</li>
+        <li>Search</li>
+        <li>Update</li>
+        <li>Delete</li>
+      </ul>
+      <div id="list-content">
+        <section id="add">
+          <form>
+            <fieldset id="add-fieldset">
+              <label for="add-id">Id</label>
+              <span id="add-id-error"></span>
+              <input type="text" name="id" id="add-id" />
+              <label for="add-name">Name</label>
+              <span id="add-name-error"></span>
+              <input type="text" name="name" id="add-name" />
+              <label for="add-age">Age</label>
+              <span id="add-age-error"></span>
+              <input type="text" name="age" id="add-age" />
+              <label for="add-salary">Salary</label>
+              <span id="add-salary-error"></span>
+              <input type="text" name="salary" id="add-salary" />
+              <label for="add-dept">Select a Department</label>
+              <select name="departmentId" id="add-dept">
+                <option value="1">AI</option>
+                <option value="2">OS</option>
+                <option value="3">PD</option>
+              </select>
+              <button id="add-btn">Add</button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="search">
+          <form>
+            <fieldset id="search-fieldset">
+              <label for="search-input">Search for names</label>
+              <input type="text" name="search" id="search-input" />
+            </fieldset>
+          </form>
+        </section>
+        <section id="update">
+          <form>
+            <fieldset id="update-checkbox">
+              <legend>Choose data to be updated:</legend>
+              <label for="checkbox-name">Name</label>
+              <input type="checkbox" name="checkbox-name" id="checkbox-name" />
+              <label for="checkbox-age">Age</label>
+              <input type="checkbox" name="checkbox-age" id="checkbox-age" />
+              <label for="checkbox-salary">Salary</label>
+              <input
+                type="checkbox"
+                name="checkbox-salary"
+                id="checkbox-salary"
+              />
+              <label for="checkbox-dept">Dep</label>
+              <input type="checkbox" name="checkbox-dept" id="checkbox-dept" />
+            </fieldset>
+            <fieldset id="update-fieldset">
+              <label for="select-id" id="select-id-label">Select employee id</label>
+              <div class="update-input-container">
+                <label for="update-name">Name</label>
+                <span id="update-name-error"></span>
+                <input type="text" name="name" id="update-name" />
+              </div>
+              <div class="update-input-container">
+                <label for="update-age">Age</label>
+                <span id="update-age-error"></span>
+                <input type="text" name="age" id="update-age" />
+              </div>
+              <div class="update-input-container">
+                <label for="update-salary">Salary</label>
+                <span id="update-salary-error"></span>
+                <input type="text" name="salary" id="update-salary" />
+              </div>
+              <div class="update-input-container">
+                <label for="update-dept">Select a Department</label>
+                <select name="departmentId" id="update-dept">
+                  <option value="1">AI</option>
+                  <option value="2">OS</option>
+                  <option value="3">PD</option>
+                </select>
+              </div>
+              <button id="update-btn">Update</button>
+            </fieldset>
+          </form>
+        </section>
+        <section id="delete">
+          <h3 style="text-align: center; line-height: 1.5">
+            Select employees and then press "Delete"
+          </h3>
+          <button id="delete-btn">Delete</button>
+        </section>
+      </div>
+      <table class="db-table"></table>
+    </main>
+  </body>
+</html>
